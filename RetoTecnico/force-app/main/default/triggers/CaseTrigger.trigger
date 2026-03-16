@@ -9,7 +9,7 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
 
     if(Trigger.isAfter){
         if(Trigger.isInsert || Trigger.isUpdate){
-            //CaseTriggerHandler.handleAfter(Trigger.new);
+            CaseTriggerHandler.handleAfter(Trigger.new);
         }
     }
 }
