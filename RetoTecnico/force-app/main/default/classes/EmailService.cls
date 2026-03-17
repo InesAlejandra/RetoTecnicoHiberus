@@ -7,7 +7,7 @@ public with sharing class EmailService {
 
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
-            mail.setToAddresses(new List<String>{'supportmanager@test.com'});
+            mail.setToAddresses(new List<String>{'ilburbano95@test.com'});
 
             mail.setSubject('Caso de Alta Prioridad Creado');
 

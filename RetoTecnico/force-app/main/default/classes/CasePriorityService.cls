@@ -26,7 +26,7 @@ public with sharing class CasePriorityService {
 
         for(Case c : cases){
 
-            if(c.Priority == 'Alta'){
+            if(c.Priority == 'High'){
                 highPriorityCases.add(c);
             }
 
