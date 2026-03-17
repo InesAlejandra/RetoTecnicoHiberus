@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="SLA Milestones">
+
+        <template if:true={milestones}>
+            <template for:each={milestones} for:item="m">
+                
+                <div key={m.name} class="milestone-card {m.statusClass}">
+                    
+                    <div class="title">
+                        {m.name}
+                    </div>
+
+                    <div class="time">
+                        {m.timeLabel}
+                    </div>
+
+                </div>
+
+            </template>
+        </template>
+
+        <template if:true={error}>
+            <p>Error cargando datos</p>
+        </template>
+
+    </lightning-card>
+</template>
